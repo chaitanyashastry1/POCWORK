@@ -9,7 +9,7 @@ I. User need to update below parameters in respective testng xml file on project
 * browser:          chrome,safari, firefox
 * browserMode:      private, normal
 * isBrowserStack:   true[if want to run on BrowserStack], false[if want to run on LocalSystem]
-* capabilitiesJson: iphone11_safari,
+* capabilitiesJson: iphone11_safari,windowsChrome
 II. In case of executing via maven command as CLI, please refer example command below:
 
 mvn clean test -Dsurefire.suiteXmlFiles=./src/main/resources/TestngXML/testng_FutureBridgeIRCTC.xml -Denvironment=prod -DprojectName=FutureBridgeIRCTC -DexecutionType=sanity -DplatformName=desktop_web -Dbrowser=chrome -DbrowserMode=private -DisBrowserStack=false -DcapabilitiesJson=windows10_chrome_combined -DbuildNumber=123
