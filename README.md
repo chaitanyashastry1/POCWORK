@@ -12,7 +12,9 @@ I. User need to update below parameters in respective testng xml file on project
 * capabilitiesJson: iphone11_safari,
 II. In case of executing via maven command as CLI, please refer example command below:
 
-mvn clean test -Dsurefire.suiteXmlFiles=./src/main/resources/TestngXML/testng_FutureBridgeIRCTC.xml -Denvironment=prod -DprojectName=FutureBridgeIRCTC -DexecutionType=sanity -DplatformName=desktop_web -Dbrowser=chrome -DbrowserMode=private -DisBrowserStack=false -DcapabilitiesJson=windows10_chrome_combined -DbuildNumber=123[any number]
+mvn clean test -Dsurefire.suiteXmlFiles=./src/main/resources/TestngXML/testng_FutureBridgeIRCTC.xml -Denvironment=prod -DprojectName=FutureBridgeIRCTC -DexecutionType=sanity -DplatformName=desktop_web -Dbrowser=chrome -DbrowserMode=private -DisBrowserStack=false -DcapabilitiesJson=windows10_chrome_combined -DbuildNumber=123
+[any number]
+
 III. Please use specific branch for each platform as mention below. No other branch should be created
 
 IV. Below are the branch name mapping wrt platform:
@@ -24,8 +26,7 @@ IV. Below are the branch name mapping wrt platform:
 * IOs Web:         ios-mweb 
 * Main:            master
 * Code Merge:      dev
-* BlankPaper(CMS): blankpaper [for Jenkins job]
-* BlankPaper(CMS): blankpaper-dev [for script development]
+
 V. Make sure to update or change the value of below columns to be set as either Y or N before initiating suite execution in the file testdata.xlsx (/src/main/resources/testdata.xlsx).
 
 VI. Below are some key and value pairs which need to be specified against each test case in the testdata.xlsx file:
